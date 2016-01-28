@@ -85,7 +85,7 @@ public class CreateList extends AppCompatActivity {
         }
         else{
             dbHandler.addShoppingList(name, store, date);
-            Toast.makeText(this, "Shopping List Created!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Shopping List Added!", Toast.LENGTH_LONG).show();
         }
     }
 
