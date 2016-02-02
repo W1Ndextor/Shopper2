@@ -28,6 +28,7 @@ public class CreateList extends AppCompatActivity {
     Calendar calendar;
     DBHandler dbHandler;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +39,7 @@ public class CreateList extends AppCompatActivity {
         nameEditText = (EditText) findViewById(R.id.nameEditText);
         storeEditText = (EditText) findViewById(R.id.storeEditText);
         dateEditText = (EditText) findViewById(R.id.dateEditText);
-
+//////////////////////////////
         calendar = Calendar.getInstance();
 
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener(){
@@ -65,7 +66,7 @@ public class CreateList extends AppCompatActivity {
                 ).show();
             }
         });
-
+/////////////////////
         dbHandler = new DBHandler(this, null);
     }
 
